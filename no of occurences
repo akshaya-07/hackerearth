@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int b[10000],n,nn,i,a,c;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a);
+        b[a]++;
+    }
+    scanf("%d",&nn);
+    for(i=0;i<nn;i++)
+    {
+        scanf("%d",&c);
+        if(b[c]==0)
+         printf("NOT PRESENT\n");
+        else
+         printf("%d\n",b[c]);
+    }
+    return 0;
+
+}
